@@ -35,6 +35,7 @@
 #include "wine/debug.h"
 #include "xthread.h"
 #include "xnetwork.h"
+#include "xdummy.h"
 
 #define WIDL_using_Windows_Foundation
 #define WIDL_using_Windows_Foundation_Collections
@@ -53,6 +54,7 @@ extern IXSystemAnalyticsImpl *x_system_analytics_impl;
 extern IXThreadingImpl *x_threading_impl;
 extern IXGameRuntimeFeatureImpl *x_game_runtime_feature_impl;
 extern IXNetworkingImpl *x_networking_impl;
+extern IXDummyImpl *x_dummy_impl;
 
 typedef struct _INITIALIZE_OPTIONS
 {

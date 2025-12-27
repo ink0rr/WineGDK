@@ -15,6 +15,7 @@ SOURCES = \
 	GDKComponent/System/Threading/XOSThreading.c \
 	GDKComponent/System/Threading/ThreadPool.c \
 	GDKComponent/System/XSystemAnalytics.c \
+	GDKComponent/System/XDummy.c \
 	GDKComponent/System/XGameRuntimeFeature.c \
 	GDKComponent/System/XNetworking.c
 

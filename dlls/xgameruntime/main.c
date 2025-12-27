@@ -208,6 +208,10 @@ HRESULT WINAPI QueryApiImpl( GUID *runtimeClassId, REFIID interfaceId, void **ou
     {
         return IXNetworkingImpl_QueryInterface( x_networking_impl, interfaceId, out );
     }
+    else if ( IsEqualGUID( runtimeClassId, &CLSID_XDummyImpl ) )
+    {
+        return IXDummyImpl_QueryInterface( x_dummy_impl, interfaceId, out );
+    }
     
     FIXME( "%s not implemented, returning E_NOINTERFACE.\n", debugstr_guid( runtimeClassId ) );
     return E_NOTIMPL;
